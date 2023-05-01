@@ -1,0 +1,12 @@
+log/
+backest_results.csv
+developconfig.py
+testing.py
+testtt.py
+trades.csv
+logs/
+frontend/
+backtest_results/
+pycache/
+dataset/
+bot_ui/

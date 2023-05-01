@@ -1,0 +1,47 @@
+# To enable automatic testing of multiple parameter values set the value to lists, for example [1,2,3,4]
+# Parameters that support lists are: 
+# ask_trade_size, bid_trade_size, max_number_of_orders_per_symbol, buy_order_price_offset, sell_order_price_offset
+# max_number_of_open_trades_for_symbol, max_open_order_age, direction, enable_psar, psar_timeframe
+
+bot_id: test001
+load_config_from_database: false
+db_user: postgres
+db_name: postgres
+db_host: database-order-routing.cohbh8m7ybqy.us-east-2.rds.amazonaws.com
+db_port: 5432
+db_password: zTXxsF#Y^rU&kZzV3
+state: 'start'
+
+exchange:binance  
+base_symbol: BTC  
+quote_symbol: USDT  
+initial_balance_base: 0.1 
+initial_balance_quote: 
+ask_trade_size: 
+bid_trade_size: 
+max_number_of_orders_per_symbol: 
+order_fee: 
+buy_order_price_offset: # in percents
+sell_order_price_offset: # in percents
+max_number_of_open_trades_for_symbol: 
+max_open_order_age: 
+from_date: 
+to_date: 
+timeout: 
+direction: 
+live_mode: false
+api_key: 
+api_secret: 
+api_password: YOUR_API_PASSWORD_HERE # Used only for exchanges that require password.
+
+enable_psar: True
+psar_timeframe: 
+
+minimum_pnl: # In percents. If backtest PNL is below this value it will not be shown in the output
+
+# The max_number_of_trades_for_period parameters sets the maximum allowed number of trades and the max_number_of_trades_period defines the period
+max_number_of_trades_for_period: 
+max_number_of_trades_period:
+
+# Trade channels are price channels where maximum number of open trades can be placed. Set trade_channels = False to disable the feature
+trade_channels: false
